@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Goel | Strategic Technical Consultant, Enterprise & AI/ML Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0265d2',
+                            900: '#0c2340',
+                            950: '#071325',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.78);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .light .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1.25rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.3), rgba(129, 140, 248, 0.1), rgba(192, 132, 252, 0.3));
+            padding: 1px;
+        }
+        .avatar-glow {
+            box-shadow: 0 0 50px -10px rgba(56, 189, 248, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white transition-colors duration-300 id="body-root">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="relative">
+                    <img src="Gaurav-PP.jpg" alt="Gaurav Goel" class="w-11 h-11 rounded-xl object-cover border-2 border-sky-400/80 shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/ffffff?text=GG';">
+                    <span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-400 border-2 border-slate-950 rounded-full"></span>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-none">Gaurav Goel</span>
+                    <span class="text-[11px] text-sky-400 font-mono tracking-wider">STRATEGIC TECHNICAL CONSULTANT</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#outcomes" class="hover:text-sky-400 transition-colors">Impact</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#casestudies" class="hover:text-sky-400 transition-colors">Case Studies</a>
+                <a href="#stack" class="hover:text-sky-400 transition-colors">Tech Stack</a>
+                <a href="#engagement" class="hover:text-sky-400 transition-colors">Engagement Models</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-sky-500/25 flex items-center space-x-2">
+                    <span>Book Advisory Call</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 right-10 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto">
+            <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-sky-400 font-mono text-xs mb-8 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Available for Strategic Technical Consulting & Enterprise AI Advisory</span>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                        Architecting <span class="gradient-text">Enterprise AI Engines</span> & High-Scale Cloud Platforms
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
+                        22+ years driving product transformation for global SaaS platforms, FinTech, and healthcare scaleups. I help founders and enterprise leaders design resilient microservices, production LLM/RAG engines, and high-velocity engineering organizations.
+                    </p>
+                    
+                    <div class="pt-2 flex flex-wrap items-center gap-4">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-base transition-all shadow-xl shadow-sky-500/20 flex items-center space-x-2">
+                            <span>Request CTO Office Consultation</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="#casestudies" class="px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-base transition-all">
+                            Explore Case Studies
+                        </a>
+                    </div>
+
+                    <!-- Micro Metrics Bar -->
+                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl font-extrabold text-white">22+ Yrs</div>
+                            <div class="text-xs text-slate-400 font-medium">Enterprise Architect</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-sky-400">22M+</div>
+                            <div class="text-xs text-slate-400 font-medium">OTA App Users</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-indigo-400">20TB+</div>
+                            <div class="text-xs text-slate-400 font-medium">Patented Analytics</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-emerald-400">80%+</div>
+                            <div class="text-xs text-slate-400 font-medium">GenAI Efficiency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Portrait & Card -->
+                <div class="lg:col-span-5">
+                    <div class="gradient-border avatar-glow">
+                        <div class="glass-panel p-6 sm:p-8 rounded-[1.2rem] space-y-6">
+                            
+                            <div class="flex items-center space-x-5">
+                                <div class="relative shrink-0">
+                                    <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-sky-400/80 p-1 bg-slate-900 shadow-xl">
+                                        <img src="Gaurav-PP.jpg" alt="Gaurav Goel" class="w-full h-full object-cover rounded-xl" onerror="this.onerror=null; this.src='https://placehold.co/200x200/0284c7/ffffff?text=Gaurav+Goel';">
+                                    </div>
+                                    <div class="absolute -bottom-2 -right-2 px-2.5 py-0.5 bg-slate-900 border border-slate-700 rounded-full text-[10px] font-mono text-emerald-400 flex items-center space-x-1 shadow">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                                        <span>Active Advisor</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Gaurav Goel</h3>
+                                    <p class="text-xs text-sky-400 font-mono font-medium mt-0.5">AVP / Senior Solution Architect</p>
+                                    <p class="text-xs text-slate-400 mt-2">Former Lead Architect at SkyTicket, Neebal, AxsLogic & IBM.</p>
+                                    <div class="mt-3 flex items-center space-x-2 text-xs text-slate-300">
+                                        <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        <span>Greater Noida / Delhi-NCR, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 pt-2 border-t border-slate-800 text-xs">
+                                <div class="flex justify-between items-center py-1">
+                                    <span class="text-slate-400 font-medium">Core Stack:</span>
+                                    <span class="text-slate-200 font-mono">Java Spring Boot, Python, AWS</span>
+                                </div>
+                                <div class="flex justify-between items-center py-1 border-t border-slate-800/60">
+                                    <span class="text-slate-400 font-medium">AI Specialization:</span>
+                                    <span class="text-sky-300 font-mono">GenAI RAG, LLM Agents, MLOps</span>
+                                </div>
+                                <div class="flex justify-between items-center py-1 border-t border-slate-800/60">
+                                    <span class="text-slate-400 font-medium">IP & Patents:</span>
+                                    <span class="text-emerald-300 font-mono">Singapore Analytics Patent</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="mailto:g.goel1511@gmail.com" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 text-center font-semibold text-xs transition-all flex items-center justify-center space-x-2">
+                                    <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                    <span>g.goel1511@gmail.com</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Measurable Business Outcomes -->
+    <section id="outcomes" class="py-20 bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-mono text-sky-400 uppercase tracking-widest mb-3">Proven Track Record</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">Measurable Business & Architectural Impact</h3>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Connecting complex technical innovation directly to gross revenue growth, infrastructure cost reduction, and operational velocity.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-sky-500/50 transition-all group">
+                    <div class="text-xs font-mono text-slate-500 mb-2">OTA / REVENUE ENGINES</div>
+                    <div class="text-4xl font-extrabold text-sky-400 mb-2 group-hover:scale-105 transition-transform origin-left">+18% Revenue</div>
+                    <p class="text-sm text-slate-300">Architected dynamic hotel pricing engines utilizing Isolation Forests and Auto-ARIMA time series to maximize yield automatically 24/7.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all group">
+                    <div class="text-xs font-mono text-slate-500 mb-2">LEGAL / ENTERPRISE GENAI</div>
+                    <div class="text-4xl font-extrabold text-emerald-400 mb-2 group-hover:scale-105 transition-transform origin-left">60% Saved</div>
+                    <p class="text-sm text-slate-300">Designed LLaMA-2 RAG assistant for legal discovery, reaching 90% retrieval precision while cutting case law research hours drastically.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="text-xs font-mono text-slate-500 mb-2">FINTECH / BIG DATA</div>
+                    <div class="text-4xl font-extrabold text-indigo-400 mb-2 group-hover:scale-105 transition-transform origin-left">20TB Scale</div>
+                    <p class="text-sm text-slate-300">Designed CQRS & Elasticsearch risk analytics engine for Winnow banking platform, fully compliant with GDPR and Basel II/III rules.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="text-xs font-mono text-slate-500 mb-2">CONTENT & AUTOMATION</div>
+                    <div class="text-4xl font-extrabold text-amber-400 mb-2 group-hover:scale-105 transition-transform origin-left">70% Cost Cut</div>
+                    <p class="text-sm text-slate-300">Deployed multi-modal NLP content pipelines for automated property listing generation and real-time social media toxicity moderation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Services -->
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-xs font-mono text-sky-400 uppercase tracking-widest mb-3">Core Offerings</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">How I Advise Founders & Enterprise Leaders</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-6 relative group hover:border-sky-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 font-bold text-lg">01</div>
+                    <h4 class="text-2xl font-bold">Strategic Technical Consulting</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        High-impact technology guidance for startups and growth-stage scaleups without full-time executive overhead. I structure engineering roadmaps, optimize cloud costs, and defend technical strategy to investors.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2"><span class="text-sky-400">✓</span><span>Engineering Roadmap & Hiring Strategy</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-sky-400">✓</span><span>Cloud Architecture & FinOps Audit</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-sky-400">✓</span><span>Investor & Board Pitch Defense</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-6 relative group hover:border-indigo-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-lg">02</div>
+                    <h4 class="text-2xl font-bold">GenAI & Agentic AI Architecture</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Converting experimental AI prototypes into secure, production enterprise software. Specializing in low-latency RAG pipelines, fine-tuned open models, vector search, and MLOps telemetry.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2"><span class="text-indigo-400">✓</span><span>RAG & Vector Search Indexing</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-indigo-400">✓</span><span>LLM Evaluation & Anti-Hallucination</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-indigo-400">✓</span><span>Agentic Workflow Orchestration</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-6 relative group hover:border-emerald-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-lg">03</div>
+                    <h4 class="text-2xl font-bold">Cloud-Native Distributed Systems</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Building bulletproof distributed backends designed for extreme scale and compliance. Modernizing monoliths into decoupled, event-driven Spring Boot microservices and Kafka event streams.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300 font-medium border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2"><span class="text-emerald-400">✓</span><span>Java Spring Boot & Python Services</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-emerald-400">✓</span><span>Kafka Event Streaming & CQRS</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-emerald-400">✓</span><span>AWS GitOps & Serverless Architecture</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Case Studies with Tab Navigation -->
+    <section id="casestudies" class="py-24 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-12">
+                <h2 class="text-xs font-mono text-sky-400 uppercase tracking-widest mb-3">Case Studies</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">Architectural Deep Dives</h3>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex space-x-2 border-b border-slate-800 overflow-x-auto pb-4 mb-8">
+                <button onclick="switchTab('ota')" id="tab-ota" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-sky-500 text-slate-950 font-bold whitespace-nowrap">Global Travel (22M+ Users)</button>
+                <button onclick="switchTab('legal')" id="tab-legal" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition-all text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">Legal GenAI Platform</button>
+                <button onclick="switchTab('fintech')" id="tab-fintech" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition-all text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">Banking Risk (20TB Data)</button>
+                <button onclick="switchTab('healthcare')" id="tab-healthcare" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition-all text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap">Healthcare Vision AI</button>
+            </div>
+
+            <!-- Tab 1: OTA Travel -->
+            <div id="content-ota" class="glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800 grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-3 py-1 rounded bg-sky-500/10 text-sky-400 text-xs font-mono border border-sky-500/20">OTA / E-Commerce Platform</span>
+                        <span class="text-xs font-mono text-slate-400">Adventure India Journey (SkyTicket)</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white">Scale Architecture for Global Travel Platform (22M+ App Downloads)</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Challenge:</strong> High-concurrency flight and hotel booking system suffered from inventory update bottlenecks, static supplier pricing, and unoptimized property descriptions.
+                    </p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Solution:</strong> Architected Java Spring Boot microservices with polyglot storage across PostgreSQL, Elasticsearch, Neo4j, and Redis. Built Neo4j graph recommendations, Auto-ARIMA/Isolation Forest dynamic price moderation (+18% revenue), and LLaMA-2 RAG content generation reducing listing creation time by 70%.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Java Spring Boot</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Kafka Streams</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Neo4j</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">LLaMA 2</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Elasticsearch</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-slate-900/90 p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-xs font-mono text-sky-400 uppercase">Quantified Results</div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">+18% Revenue</div>
+                        <p class="text-xs text-slate-400">Automated price moderation across 24/7 supplier inventory feeds.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-emerald-400">70% Cost Cut</div>
+                        <p class="text-xs text-slate-400">GenAI content generation for property partner listings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Legal GenAI -->
+            <div id="content-legal" class="hidden glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800 grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-3 py-1 rounded bg-indigo-500/10 text-indigo-400 text-xs font-mono border border-indigo-500/20">LegalTech / Enterprise AI</span>
+                        <span class="text-xs font-mono text-slate-400">Unicus Legal Platform</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white">RAG-Powered Legal Case Discovery & Research Assistant</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Challenge:</strong> Legal researchers spent hundreds of hours manually indexing statutory precedent and case files with risk of missing relevant clauses.
+                    </p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Solution:</strong> Spearheaded an enterprise GenAI platform integrating LLaMA-2 LLM, LangChain prompt pipelines, and custom semantic vector embeddings (BERT/NLTK) on AWS serverless infrastructure.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">LangChain</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">LLaMA 2</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Vector Search</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">AWS Lambda</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-slate-900/90 p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-xs font-mono text-indigo-400 uppercase">Quantified Results</div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">60% Saved</div>
+                        <p class="text-xs text-slate-400">Reduced legal research overhead per case filing.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-400">90% Precision</div>
+                        <p class="text-xs text-slate-400">Case law retrieval accuracy with zero hallucination guardrails.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Banking Risk -->
+            <div id="content-fintech" class="hidden glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800 grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-3 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">Fintech / Regulatory Banking</span>
+                        <span class="text-xs font-mono text-slate-400">Winnow Platform (AxsLogic Singapore)</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white">20TB Financial Analytics & Credit Risk Platform</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Challenge:</strong> Processing 5–25 years of institutional financial history for risk forecasting required extreme throughput and strict audit logs.
+                    </p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Solution:</strong> Architected CQRS Java microservices separating read/write workloads, with a multi-node Elasticsearch infrastructure handling 20TB+ analytics and PySpark MLlib risk scoring pipelines aligned with GDPR and Basel II/III.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">CQRS Architecture</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Elasticsearch</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">PySpark MLlib</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">GDPR / Basel Compliance</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-slate-900/90 p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-xs font-mono text-emerald-400 uppercase">Quantified Results</div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Singapore Patent</div>
+                        <p class="text-xs text-slate-400">Patented analytics business logic and risk classification engine.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-emerald-400">20TB Processing</div>
+                        <p class="text-xs text-slate-400">Sub-second query response across multi-terabyte financial logs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Healthcare Vision AI -->
+            <div id="content-healthcare" class="hidden glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800 grid lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-3 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono border border-amber-500/20">Healthcare / Vision AI</span>
+                        <span class="text-xs font-mono text-slate-400">CipBuddy (Neebal Technologies)</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white">Real-Time Inhaler Intake Analysis & Posture AI</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Challenge:</strong> Patients using respiratory inhalers frequently suffer from incorrect technique, leading to poor drug delivery without medical feedback.
+                    </p>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong>Solution:</strong> Architected a 3D CNN (PyTorch) posture estimation pipeline using OpenPose and TensorRT/ONNX Runtime for low-latency streaming feedback over Kafka video pipelines.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">PyTorch 3D CNN</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">OpenPose</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">TensorRT</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Kafka Streaming</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-slate-900/90 p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-xs font-mono text-amber-400 uppercase">Quantified Results</div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Sub-100ms Inference</div>
+                        <p class="text-xs text-slate-400">Real-time video posture correction for active inhaler patients.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-amber-400">Multi-Modal Vision</div>
+                        <p class="text-xs text-slate-400">High precision posture & movement anomaly classification.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Stack Matrix -->
+    <section id="stack" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-xs font-mono text-sky-400 uppercase tracking-widest mb-3">Technical Depth</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">Architectural & Tech Stack</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-sky-400 font-mono text-sm font-bold uppercase tracking-wider border-b border-slate-800 pb-2">GenAI & ML Stack</div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>LLaMA 2 / Open Models</li>
+                        <li>LangChain & LlamaIndex</li>
+                        <li>Vector DBs (Qdrant, Pinecone)</li>
+                        <li>TensorFlow & PyTorch</li>
+                        <li>MLflow & Airflow MLOps</li>
+                        <li>BERT, ResNet, 3D CNN</li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-indigo-400 font-mono text-sm font-bold uppercase tracking-wider border-b border-slate-800 pb-2">Backend & Microservices</div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>Java 17/21 & Spring Boot</li>
+                        <li>Python (FastAPI, Flask)</li>
+                        <li>CQRS & Event-Driven Design</li>
+                        <li>REST & GraphQL APIs</li>
+                        <li>OAuth2, JWT, PCI-DSS</li>
+                        <li>gRPC & High-Throughput I/O</li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-emerald-400 font-mono text-sm font-bold uppercase tracking-wider border-b border-slate-800 pb-2">Data & Streaming</div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>Apache Kafka & Kafka Streams</li>
+                        <li>Elasticsearch & OpenSearch</li>
+                        <li>Graph DBs (Neo4j)</li>
+                        <li>PostgreSQL & Redis Caching</li>
+                        <li>Apache Spark & PySpark</li>
+                        <li>Multi-Terabyte ETL Pipelines</li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-4">
+                    <div class="text-amber-400 font-mono text-sm font-bold uppercase tracking-wider border-b border-slate-800 pb-2">Cloud & DevOps</div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li>AWS (Lambda, ECS, EKS)</li>
+                        <li>AWS API Gateway & Cognito</li>
+                        <li>Terraform Infrastructure-as-Code</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>GitOps & Jenkins CI/CD</li>
+                        <li>Prometheus & Grafana</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Models -->
+    <section id="engagement" class="py-24 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-mono text-sky-400 uppercase tracking-widest mb-3">Work With Me</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">Engagement Structures</h3>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Tailored engagement models designed for startup agility or enterprise governance.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Model 1 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-6">
+                    <div class="text-xs font-mono text-sky-400 uppercase tracking-widest">Monthly Advisory Retainer</div>
+                    <h4 class="text-2xl font-bold">Strategic Technical Consultant</h4>
+                    <p class="text-sm text-slate-400">Executive technology leadership providing technical strategy, engineering mentorship, hiring oversight, and architecture governance.</p>
+                    <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Dedicated Advisory & Architecture Hours</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Architecture & Team Roadmap</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Investor & Board Pitch Defense</span></li>
+                    </ul>
+                </div>
+
+                <!-- Model 2 -->
+                <div class="glass-panel p-8 rounded-2xl border border-sky-500/50 bg-sky-950/20 space-y-6 relative">
+                    <div class="absolute -top-3 right-6 px-3 py-1 bg-sky-500 text-slate-950 text-xs font-bold font-mono rounded-full">RECOMMENDED</div>
+                    <div class="text-xs font-mono text-sky-400 uppercase tracking-widest">Fixed-Scope Sprint</div>
+                    <h4 class="text-2xl font-bold">Architecture Review</h4>
+                    <p class="text-sm text-slate-400">Fixed 2 to 4-week deep dive into existing software codebases, cloud expenditure, AI models, and scalability bottlenecks.</p>
+                    <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Comprehensive Code & Stack Audit</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>FinOps Cloud Cost Optimization</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Prioritized Technical Blueprint</span></li>
+                    </ul>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 space-y-6">
+                    <div class="text-xs font-mono text-sky-400 uppercase tracking-widest">Platform Consulting</div>
+                    <h4 class="text-2xl font-bold">GenAI Platform Build</h4>
+                    <p class="text-sm text-slate-400">Hands-on architecture leadership for building and deploying enterprise GenAI, RAG, or real-time event streaming systems.</p>
+                    <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Production LLM & RAG Design</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>POC to Production Pipeline</span></li>
+                        <li class="flex items-start space-x-2"><span class="text-sky-400">✓</span><span>Engineering Mentorship & MLOps</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Call to Action -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="glass-panel p-10 sm:p-16 rounded-3xl border border-slate-800 text-center space-y-8 relative overflow-hidden">
+                <div class="absolute -top-24 -left-24 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Let's Discuss Your Architecture</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+                    Whether you are scaling past system bottlenecks, preparing for investor diligence, or moving GenAI prototypes to production—I reply to all serious enquiries.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:g.goel1511@gmail.com?subject=Architecture%20Advisory%20Enquiry" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-base transition-all shadow-xl shadow-sky-500/25">
+                        Schedule Initial Discovery Call
+                    </a>
+                    <a href="https://linkedin.com/in/gauravgoel1511" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-base transition-all">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+
+                <div class="pt-8 border-t border-slate-800/80 grid sm:grid-cols-3 gap-4 text-xs font-mono text-slate-400">
+                    <div>LOCATION: Greater Noida / Delhi-NCR</div>
+                    <div>EMAIL: g.goel1511@gmail.com</div>
+                    <div>PHONE: +91-9990002409</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500 font-mono">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>© 2026 Gaurav Goel. All rights reserved.</div>
+            <div class="flex space-x-6">
+                <a href="#outcomes" class="hover:text-slate-400">Impact</a>
+                <a href="#services" class="hover:text-slate-400">Services</a>
+                <a href="#casestudies" class="hover:text-slate-400">Case Studies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        function switchTab(tab) {
+            const tabs = ['ota', 'legal', 'fintech', 'healthcare'];
+            tabs.forEach(t => {
+                const content = document.getElementById(`content-${t}`);
+                const btn = document.getElementById(`tab-${t}`);
+                if (t === tab) {
+                    content.classList.remove('hidden');
+                    btn.className = 'px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-sky-500 text-slate-950 font-bold whitespace-nowrap';
+                } else {
+                    content.classList.add('hidden');
+                    btn.className = 'px-5 py-2.5 rounded-xl font-semibold text-sm transition-all text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
